@@ -3,87 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akash Anand - Data Science & AI Enthusiast</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Akash Anand - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2563eb;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: #374151;
+        }
+
+        .item-date {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+
+        .item-location {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+
+        .item-description {
+            color: #4b5563;
+            margin-bottom: 8px;
+        }
+
+        .item-details {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .item-details li {
+            margin-bottom: 5px;
+            position: relative;
+        }
+
+        .item-details li:before {
+            content: "•";
+            color: #2563eb;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .skill-category h4 {
+            color: #2563eb;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .skill-list {
+            color: #4b5563;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+            
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .item-date {
+                margin-top: 5px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <div class="header">
             <h1 class="name">Akash Anand</h1>
-            <p class="title">Data Science & AI Enthusiast</p>
-            <div class="social-icons">
-                <a href="https://github.com/akashanand617" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://linkedin.com/in/akash-anand06" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="social-icon">
-                    <i class="fas fa-file-pdf"></i>
-                </a>
-                <a href="mailto:axaanand@ucdavis.edu" class="social-icon">
-                    <i class="fas fa-envelope"></i>
-                </a>
+            <div class="contact-info">
+                <a href="mailto:axaanand@ucdavis.edu">axaanand@ucdavis.edu</a> | 
+                <a href="https://www.linkedin.com/in/akash-anand06" target="_blank">LinkedIn</a> | 
+                <a href="https://github.com/akashanand617" target="_blank">GitHub</a>
             </div>
-        </header>
+        </div>
 
-        <main class="main-content">
-            <section class="experience-section">
-                <h2>Experience</h2>
-                <div class="experience-items">
-                    <div class="experience-item">
-                        <h3>UC Davis</h3>
-                        <p class="experience-role">Student - Data Science (B.S.) & Economics (B.A., Data Analytics & Policy)</p>
-                        <p class="experience-description">
-                            Currently pursuing dual degrees with focus on data science, economics, and policy analysis. 
-                            Studying deep learning, natural language processing, and building applied AI solutions.
-                        </p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>HCLTech</h3>
-                        <p class="experience-role">Intern</p>
-                        <p class="experience-description">
-                            Gained valuable industry experience through internship, working on real-world technology projects 
-                            and learning enterprise software development practices.
-                        </p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Rice Elite Tech Summer Camp</h3>
-                        <p class="experience-role">Participant</p>
-                        <p class="experience-description">
-                            Intensive summer program focused on advanced technology concepts, collaborative projects, 
-                            and hands-on experience with cutting-edge tools and methodologies.
-                        </p>
-                    </div>
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">University of California, Davis</div>
+                    <div class="item-date">Sept. 2024 – May 2027</div>
                 </div>
-            </section>
-
-            <section class="projects-section">
-                <h2>Projects</h2>
-                <div class="project-items">
-                    <div class="project-item">
-                        <h3>Multimodal YouTube Video Summarizer</h3>
-                        <p>Building a comprehensive video summarization system using Whisper, CLIP, and GPT-4 to extract and synthesize key insights from YouTube content. Combines audio transcription, visual analysis, and natural language generation for comprehensive video understanding.</p>
-                    </div>
-                    <div class="project-item">
-                        <h3>Open-Vocabulary Object Detection Study</h3>
-                        <p>Conducting a comparative analysis of state-of-the-art models including YOLO-World, RCNN, and GroundingDINO for open-vocabulary object detection tasks. Evaluating performance across different datasets and use cases.</p>
-                    </div>
-                    <div class="project-item">
-                        <h3>Diamond Price Prediction System</h3>
-                        <p>Developing an ML-powered diamond pricing model using Random Forest algorithms with a custom VS Code frontend for seamless user interaction. Integrates machine learning with practical software development.</p>
-                    </div>
+                <div class="item-location">Davis, CA</div>
+                <div class="item-description">B.S. in Data Science, B.A. in Economics (Specialization in Data Analytics and Policy)</div>
+                <div class="item-description"><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Calculus III, Linear Algebra, Statistical Data Science, Regression Analysis, Abstract Mathematics and Proof-writing</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="item-header">
+                    <div class="item-title">Coppell High School</div>
+                    <div class="item-date">Aug. 2022 – May 2024</div>
                 </div>
-            </section>
-        </main>
+                <div class="item-location">Coppell, TX</div>
+                <div class="item-description">AP Calc BC, AP Computer Science, AP Statistics, CS 3 Honors</div>
+            </div>
+        </div>
 
-        <footer class="footer">
-            <p>&copy; 2024 Akash Anand. Built with simplicity in mind.</p>
-        </footer>
+        <div class="section">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">Research Project Summer Intern</div>
+                    <div class="item-date">July 2023 – August 2023</div>
+                </div>
+                <div class="item-location">HCLTech • Remote</div>
+                <ul class="item-details">
+                    <li>Performed Exploratory Data Analysis (EDA) to identify key insights in a security and anomaly dataset</li>
+                    <li>Understood the application of NLP using Deep Learning and Machine Learning in Python</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="item-header">
+                    <div class="item-title">RICE Elite Tech Summer Camp</div>
+                    <div class="item-date">July 2023 – Aug. 2023</div>
+                </div>
+                <div class="item-location">Rice University • Remote</div>
+                <ul class="item-details">
+                    <li>Learned of the Application of AI in Smart Cities</li>
+                    <li>Used Python to design and implement a neural network algorithm for classifying real-world images and using the resulting knowledge to make the human environment safer, healthier, and more efficient</li>
+                    <li>Learned Deep Learning Fundamentals</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Multimodal YouTube Video Summarizer</div>
+                    <div class="item-date">Apr. 2025 – Present</div>
+                </div>
+                <div class="item-location">Whisper, CLIP</div>
+                <ul class="item-details">
+                    <li>Building a multimodal summarization pipeline using Whisper, CLIP, and GPT-4 to generate context-aware summaries from audiovisual data</li>
+                    <li>Encoding keyframes with OpenCV and CLIP, integrating visual semantics with transcripts for enriched LLM input</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Diamond Price Predictor</div>
+                    <div class="item-date">Mar. 2025 – May 2025</div>
+                </div>
+                <div class="item-location">RandomForest, Decision Tree, Python, VScode</div>
+                <ul class="item-details">
+                    <li>Conducted Exploratory Data Analysis on a kaggle diamond prices dataset to understand the data and its relation to the predicted value</li>
+                    <li>Used RandomForest and Decision Trees models to predict the price based on the other columns and assessed the accuracy of both models compared to each other</li>
+                    <li>Built a frontend in VScode that includes a user-friendly interface that can use a diamond's features to predict its price based on the trained RandomForest model</li>
+                </ul>
+            </div>
+            
+            <div class="project-item">
+                <div class="item-header">
+                    <div class="item-title">Analysis of Open-Vocabulary Object Detectors</div>
+                    <div class="item-date">Jan. 2025 – Mar. 2025</div>
+                </div>
+                <div class="item-location">GroundingDino, YOLO-World, rCNN</div>
+                <ul class="item-details">
+                    <li>Conducted comparative analysis of RCNN, YOLO-World, and GroundingDINO for object detection on an apple dataset using IoU, precision, recall, and F1 score</li>
+                    <li>Built a Robustness Evaluation Dataset with complex scenes and abstract prompts to test model generalization</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Languages</h4>
+                    <div class="skill-list">Java, Python, R</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Tools</h4>
+                    <div class="skill-list">Microsoft Word, Excel, Access, PowerPoint, Tableau, Adobe Acrobat, Visio, Latex, VSCode</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Developer Tools</h4>
+                    <div class="skill-list">Git, Anaconda, IntelliJ, Jupyter Notebook, Firefox, Rstudio/Quatro</div>
+                </div>
+                <div class="skill-category">
+                    <h4>Libraries</h4>
+                    <div class="skill-list">pandas, NumPy, Matplotlib, Seaborn, scikit-Learn, RandomForest</div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html> 
