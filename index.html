@@ -22,6 +22,7 @@
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 16px;
       --maxw: 1100px;
+      --header-bg: rgba(10,10,10,.6);   /* dark theme header */
     }
     
     [data-theme="light"] {
@@ -33,6 +34,7 @@
       --accent: #495057;
       --accent-2: #6c757d;
       --shadow: 0 10px 30px rgba(0,0,0,.1);
+      --header-bg: rgba(255,255,255,.85); /* light theme header */
     }
     
     /* Ensure section titles have good contrast in both themes */
@@ -67,7 +69,7 @@
     .skip:focus{left:12px; top:12px; background:#111; color:#fff; padding:8px 12px; border-radius:8px}
 
     /* NAV */
-    header{position:sticky; top:0; z-index:50; backdrop-filter:blur(8px); background:rgba(10,10,10,.6); border-bottom:1px solid var(--border)}
+    header{position:sticky; top:0; z-index:50; backdrop-filter:blur(8px); background:var(--header-bg); border-bottom:1px solid var(--border)}
     .nav{display:flex; align-items:center; justify-content:space-between; height:64px}
     .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
     .logo{width:36px; height:36px; border-radius:12px; background:#111; border:1px solid var(--border); display:grid; place-items:center; font-weight:700}
