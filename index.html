@@ -539,6 +539,12 @@
     </svg>
   </button>
 
+  <!-- Vercel Analytics -->
+  <script type="module">
+    import { inject } from '@vercel/analytics';
+    inject();
+  </script>
+
   <script>
     // Year
     document.getElementById('y').textContent = new Date().getFullYear();
