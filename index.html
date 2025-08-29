@@ -86,9 +86,8 @@
     .skill-category{display:grid; gap:12px}
     .skill-category h3{font-size:16px; margin:0; color:var(--text)}
     .skill-badges{display:flex; gap:12px; flex-wrap:wrap}
-    .badge{display:flex; align-items:center; gap:8px; border:1px solid var(--border); color:var(--accent-2); padding:8px 12px; border-radius:999px; font-size:13px; text-decoration:none}
-    .badge:hover{background:var(--border); color:var(--text)}
-    .badge img{width:16px; height:16px; border-radius:2px}
+    .badge{display:inline-flex; align-items:center; border:1px solid var(--border); color:var(--accent-2); padding:8px 12px; border-radius:999px; font-size:13px; text-decoration:none; background:rgba(255,255,255,.02); transition:all 0.2s ease}
+    .badge:hover{background:var(--border); color:var(--text); transform:translateY(-1px)}
 
     /* CONTACT */
     .contact-box{display:grid; gap:14px}
@@ -106,6 +105,7 @@
       </a>
       <nav class="links" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -141,7 +141,21 @@
       <div class="container card">
         <h2 class="section-title">About</h2>
         <p>I'm a data practitioner focused on shipping end-to-end ML/AI and analytics systems — from web scraping and ETL to model training and interactive dashboards. I've built scalable scrapers (10K+ records/day), sharded relational stores for fast dedupe/filtering, productionized ML on AWS SageMaker, and delivered Streamlit/React front ends backed by FastAPI services and BI dashboards.</p>
-        <p class="muted">UC Davis — B.S. Data Science; B.A. Economics (Data Analytics & Policy), Sept 2024 – May 2027. Relevant coursework: Data Structures & Algorithms, Linear Algebra, Statistical Data Science, Regression Analysis, Abstract Math & Proof-writing.</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="container card">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="item">
+            <h4>University of California, Davis</h4>
+            <div class="meta">Sept 2024 – May 2027</div>
+            <p class="muted">B.S. Data Science & B.A. Economics (Data Analytics & Policy)</p>
+            <p class="muted">Relevant coursework: Data Structures & Algorithms, Linear Algebra, Statistical Data Science, Regression Analysis, Abstract Math & Proof-writing</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -230,41 +244,41 @@
           <div class="skill-category">
             <h3>Libraries & Frameworks</h3>
             <div class="skill-badges">
-              <span class="badge"><img src="assets/icons/numpy.svg" alt="NumPy" />NumPy</span>
-              <span class="badge"><img src="assets/icons/pandas.svg" alt="Pandas" />Pandas</span>
-              <span class="badge"><img src="assets/icons/matplotlib.svg" alt="Matplotlib" />Matplotlib</span>
-              <span class="badge"><img src="assets/icons/seaborn.svg" alt="Seaborn" />Seaborn</span>
-              <span class="badge"><img src="assets/icons/scikit-learn.svg" alt="scikit-learn" />scikit-learn</span>
-              <span class="badge"><img src="assets/icons/tensorflow.svg" alt="TensorFlow" />TensorFlow</span>
-              <span class="badge"><img src="assets/icons/pytorch.svg" alt="PyTorch" />PyTorch</span>
-              <span class="badge"><img src="assets/icons/opencv.svg" alt="OpenCV" />OpenCV</span>
-              <span class="badge"><img src="assets/icons/selenium.svg" alt="Selenium" />Selenium</span>
-              <span class="badge"><img src="assets/icons/beautifulsoup.svg" alt="BeautifulSoup" />BeautifulSoup</span>
-              <span class="badge"><img src="assets/icons/streamlit.svg" alt="Streamlit" />Streamlit</span>
+              <span class="badge">NumPy</span>
+              <span class="badge">Pandas</span>
+              <span class="badge">Matplotlib</span>
+              <span class="badge">Seaborn</span>
+              <span class="badge">scikit-learn</span>
+              <span class="badge">TensorFlow</span>
+              <span class="badge">PyTorch</span>
+              <span class="badge">OpenCV</span>
+              <span class="badge">Selenium</span>
+              <span class="badge">BeautifulSoup</span>
+              <span class="badge">Streamlit</span>
             </div>
           </div>
           
           <div class="skill-category">
             <h3>Tools & Platforms</h3>
             <div class="skill-badges">
-              <span class="badge"><img src="assets/icons/aws.svg" alt="AWS" />AWS</span>
-              <span class="badge"><img src="assets/icons/sagemaker.svg" alt="SageMaker" />SageMaker</span>
-              <span class="badge"><img src="assets/icons/s3.svg" alt="S3" />S3</span>
-              <span class="badge"><img src="assets/icons/git.svg" alt="Git" />Git</span>
-              <span class="badge"><img src="assets/icons/vscode.svg" alt="VS Code" />VS Code</span>
-              <span class="badge"><img src="assets/icons/jupyter.svg" alt="Jupyter" />Jupyter</span>
-              <span class="badge"><img src="assets/icons/tableau.svg" alt="Tableau" />Tableau</span>
+              <span class="badge">AWS</span>
+              <span class="badge">SageMaker</span>
+              <span class="badge">S3</span>
+              <span class="badge">Git</span>
+              <span class="badge">VS Code</span>
+              <span class="badge">Jupyter</span>
+              <span class="badge">Tableau</span>
             </div>
           </div>
           
           <div class="skill-category">
             <h3>Core Competencies</h3>
             <div class="skill-badges">
-              <span class="badge"><img src="assets/icons/ml.svg" alt="Machine Learning" />Machine Learning</span>
-              <span class="badge"><img src="assets/icons/etl.svg" alt="ETL Pipelines" />ETL Pipelines</span>
-              <span class="badge"><img src="assets/icons/object-detection.svg" alt="Object Detection" />Object Detection</span>
-              <span class="badge"><img src="assets/icons/diffusion.svg" alt="Diffusion Models" />Diffusion Models</span>
-              <span class="badge"><img src="assets/icons/data-engineering.svg" alt="Data Engineering" />Data Engineering</span>
+              <span class="badge">Machine Learning</span>
+              <span class="badge">ETL Pipelines</span>
+              <span class="badge">Object Detection</span>
+              <span class="badge">Diffusion Models</span>
+              <span class="badge">Data Engineering</span>
             </div>
           </div>
         </div>
