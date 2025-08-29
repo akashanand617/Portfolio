@@ -8,7 +8,7 @@
   <meta property="og:title" content="Akash Anand — Portfolio" />
   <meta property="og:description" content="Data Science & Economics at UC Davis | ML/AI, Data Engineering, and Analytics projects" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="LinkedinPhoto.jpeg" />
+  <meta property="og:image" content="LinkedinPhoto.png" />
   <link rel="icon" href="assets/logos/favicon.svg" />
   <style>
     :root{
@@ -82,8 +82,13 @@
     .project h5{margin:0}
 
     /* SKILLS */
-    .skills{display:flex; gap:18px; flex-wrap:wrap}
-    .badge{border:1px solid var(--border); color:var(--accent-2); padding:6px 10px; border-radius:999px; font-size:13px}
+    .skills{display:grid; gap:24px}
+    .skill-category{display:grid; gap:12px}
+    .skill-category h3{font-size:16px; margin:0; color:var(--text)}
+    .skill-badges{display:flex; gap:12px; flex-wrap:wrap}
+    .badge{display:flex; align-items:center; gap:8px; border:1px solid var(--border); color:var(--accent-2); padding:8px 12px; border-radius:999px; font-size:13px; text-decoration:none}
+    .badge:hover{background:var(--border); color:var(--text)}
+    .badge img{width:16px; height:16px; border-radius:2px}
 
     /* CONTACT */
     .contact-box{display:grid; gap:14px}
@@ -126,7 +131,7 @@
           </div>
         </div>
         <div style="justify-self:center">
-          <figure class="avatar"><img src="LinkedinPhoto.jpeg" alt="Portrait of Akash Anand" /></figure>
+          <figure class="avatar"><img src="LinkedinPhoto.png" alt="Portrait of Akash Anand" /></figure>
         </div>
       </div>
     </section>
@@ -208,36 +213,60 @@
       <div class="container card">
         <h2 class="section-title">Skills</h2>
         <div class="skills">
-          <span class="badge">Python</span>
-          <span class="badge">Java</span>
-          <span class="badge">C++</span>
-          <span class="badge">JavaScript</span>
-          <span class="badge">R</span>
-          <span class="badge">MATLAB</span>
-          <span class="badge">SQL</span>
-          <span class="badge">LaTeX</span>
-          <span class="badge">VS Code</span>
-          <span class="badge">Jupyter Notebook</span>
-          <span class="badge">NumPy</span>
-          <span class="badge">Pandas</span>
-          <span class="badge">Matplotlib</span>
-          <span class="badge">Seaborn</span>
-          <span class="badge">scikit-learn</span>
-          <span class="badge">TensorFlow</span>
-          <span class="badge">PyTorch</span>
-          <span class="badge">RandomForest</span>
-          <span class="badge">OpenCV</span>
-          <span class="badge">Selenium</span>
-          <span class="badge">BeautifulSoup</span>
-          <span class="badge">AWS</span>
-          <span class="badge">SageMaker</span>
-          <span class="badge">Bedrock</span>
-          <span class="badge">S3</span>
-          <span class="badge">Git</span>
-          <span class="badge">Streamlit</span>
-          <span class="badge">Diffusion Models</span>
-          <span class="badge">Object Detection</span>
-          <span class="badge">ETL Pipelines</span>
+          <div class="skill-category">
+            <h3>Programming & Languages</h3>
+            <div class="skill-badges">
+              <span class="badge">Python</span>
+              <span class="badge">Java</span>
+              <span class="badge">C++</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">R</span>
+              <span class="badge">MATLAB</span>
+              <span class="badge">SQL</span>
+              <span class="badge">LaTeX</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Libraries & Frameworks</h3>
+            <div class="skill-badges">
+              <span class="badge"><img src="assets/icons/numpy.svg" alt="NumPy" />NumPy</span>
+              <span class="badge"><img src="assets/icons/pandas.svg" alt="Pandas" />Pandas</span>
+              <span class="badge"><img src="assets/icons/matplotlib.svg" alt="Matplotlib" />Matplotlib</span>
+              <span class="badge"><img src="assets/icons/seaborn.svg" alt="Seaborn" />Seaborn</span>
+              <span class="badge"><img src="assets/icons/scikit-learn.svg" alt="scikit-learn" />scikit-learn</span>
+              <span class="badge"><img src="assets/icons/tensorflow.svg" alt="TensorFlow" />TensorFlow</span>
+              <span class="badge"><img src="assets/icons/pytorch.svg" alt="PyTorch" />PyTorch</span>
+              <span class="badge"><img src="assets/icons/opencv.svg" alt="OpenCV" />OpenCV</span>
+              <span class="badge"><img src="assets/icons/selenium.svg" alt="Selenium" />Selenium</span>
+              <span class="badge"><img src="assets/icons/beautifulsoup.svg" alt="BeautifulSoup" />BeautifulSoup</span>
+              <span class="badge"><img src="assets/icons/streamlit.svg" alt="Streamlit" />Streamlit</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Tools & Platforms</h3>
+            <div class="skill-badges">
+              <span class="badge"><img src="assets/icons/aws.svg" alt="AWS" />AWS</span>
+              <span class="badge"><img src="assets/icons/sagemaker.svg" alt="SageMaker" />SageMaker</span>
+              <span class="badge"><img src="assets/icons/s3.svg" alt="S3" />S3</span>
+              <span class="badge"><img src="assets/icons/git.svg" alt="Git" />Git</span>
+              <span class="badge"><img src="assets/icons/vscode.svg" alt="VS Code" />VS Code</span>
+              <span class="badge"><img src="assets/icons/jupyter.svg" alt="Jupyter" />Jupyter</span>
+              <span class="badge"><img src="assets/icons/tableau.svg" alt="Tableau" />Tableau</span>
+            </div>
+          </div>
+          
+          <div class="skill-category">
+            <h3>Core Competencies</h3>
+            <div class="skill-badges">
+              <span class="badge"><img src="assets/icons/ml.svg" alt="Machine Learning" />Machine Learning</span>
+              <span class="badge"><img src="assets/icons/etl.svg" alt="ETL Pipelines" />ETL Pipelines</span>
+              <span class="badge"><img src="assets/icons/object-detection.svg" alt="Object Detection" />Object Detection</span>
+              <span class="badge"><img src="assets/icons/diffusion.svg" alt="Diffusion Models" />Diffusion Models</span>
+              <span class="badge"><img src="assets/icons/data-engineering.svg" alt="Data Engineering" />Data Engineering</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
